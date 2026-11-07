@@ -1,7 +1,5 @@
 # Quinta lista de ejercicios – Selección de variables y generalización
 
-Introducción al Machine Learning · Universidad El Bosque · 2026-2
-
 Regresión lineal con intercepto sobre el conjunto **Hitters** (263 jugadores de béisbol,
 objetivo `Salary`, 19 predictoras). Se comparan cuatro modelos: todas las variables,
 mayor correlación (top 7), pruebas t (p < 0.05) y selección hacia adelante.
@@ -15,25 +13,25 @@ taller_ml/
 ├── data/
 │   └── Datos_Hitters.csv
 ├── src/
-│   ├── config.py       # constantes (semilla, tamaños, rutas)
-│   ├── data.py         # carga y partición 50/70/143
-│   ├── metrics.py      # riesgo cuadrático (función propia)
-│   ├── models.py       # ajuste y evaluación de regresiones
-│   ├── selection.py    # correlación, pruebas t, forward
-│   ├── plots.py        # gráfica de selección hacia adelante
-│   └── main.py         # ejecuta los ejercicios 1–4
+│   ├── config.py      
+│   ├── data.py         
+│   ├── metrics.py     
+│   ├── models.py       
+│   ├── selection.py  
+│   ├── plots.py       
+│   └── main.py       
 ├── notebooks/
 │   └── taller_hitters.ipynb
 └── outputs/
-    ├── tables/         # CSV de las tablas pedidas
-    └── figures/        # forward_selection.png
+    ├── tables/        
+    └── figures/       
 ```
 
 ## Instalación
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
+source .venv/bin/activate       
 pip install -r requirements.txt
 ```
 
@@ -42,7 +40,7 @@ pip install -r requirements.txt
 Desde la raíz del proyecto:
 
 ```bash
-python -m src.main               # imprime resultados y guarda tablas/figura en outputs/
+python -m src.main              
 jupyter notebook notebooks/taller_hitters.ipynb
 ```
 
